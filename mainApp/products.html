@@ -3,15 +3,23 @@
 <link href="css/shop-homepage.css" rel="stylesheet">
 
 <style>
+
 .thumbnail img {
     height:200px;
     width:100%;
 }
 
- th {
-width: 500px;
+ td{
+   float:left;
+       width:25%;
+       height: 50%;
+
+       display:inline-block;
 
 }
+
+
+
 </style>
 </head>
 <body ng-app="">
@@ -28,7 +36,7 @@ width: 500px;
 
 <table>
                      <tr ng-repeat="product in displayproducts" ng-if="$index % 4 == 0" class="row" >
-                       <td  style="height: 10px width:30px" class="col-sm-4 col-lg-4 col-md-4" style="display:inline-block">
+                       <td class="col-sm-3 col-lg-3 col-md-3" style="display:inline-block">
                          <div class="thumbnail">
                              <img src={{displayproducts[$index].picture}} alt="">
                                <div class="caption">
@@ -36,7 +44,8 @@ width: 500px;
                                  <h4>{{displayproducts[$index].name}}</h4>
                                   </br>
                                       <div style="text-align: center;">
-                                        <span>Qty <input ng-model="displayproducts[$index].quantity" size="2"> </input>{{" "+displayproducts[$index].measure}} </span>
+
+                                        <span>Qty <input type="number" ng-model="displayproducts[$index].quantity" min="0"> </input>{{" "+displayproducts[$index].measure}} </span>
                                         </div>
 
 
@@ -50,7 +59,7 @@ width: 500px;
                            </td>
                     </br>
 
-                    <td  style="height: 10px width:30px" class="col-sm-4 col-lg-4 col-md-4" ng-if="($index+1) < displayproducts.length">
+                    <td class="col-sm-3 col-lg-3 col-md-3" ng-if="($index+1) < displayproducts.length">
                         <div class="thumbnail">
                             <img src={{displayproducts[$index+1].picture}} alt="">
                             <div class="caption">
@@ -58,7 +67,7 @@ width: 500px;
                                 <h4>{{displayproducts[$index+1].name}}</h4>
                               </br>
                                  <div style="text-align: center;">
-                                 <span>Qty <input ng-model="displayproducts[$index+1].quantity" size="2"> </input>{{" "+displayproducts[$index+1].measure}} </span>
+                                 <span>Qty <input  type="number" ng-model="displayproducts[$index+1].quantity"> </input>{{" "+displayproducts[$index+1].measure}} </span>
                                </div>
 
                                     <div style="text-align: center;">
@@ -74,7 +83,7 @@ width: 500px;
                     </td>
                       </br>
 
-                    <td  style="height: 10px width:30px" class="col-sm-4 col-lg-4 col-md-4" ng-if="($index+2) < displayproducts.length">
+                    <td  class="col-sm-3 col-lg-3 col-md-3" ng-if="($index+2) < displayproducts.length">
                         <div class="thumbnail">
                             <img src={{displayproducts[$index+2].picture}} alt="">
                             <div class="caption">
@@ -82,7 +91,7 @@ width: 500px;
                                 <h4>{{displayproducts[$index+2].name}}</h4>
                               </br>
                                  <div style="text-align: center;">
-                                 <span>Qty <input ng-model="displayproducts[$index+2].quantity" size="2"> </input>{{" "+displayproducts[$index+2].measure}} </span>
+                                 <span>Qty <input  type="number" ng-model="displayproducts[$index+2].quantity"> </input>{{" "+displayproducts[$index+2].measure}} </span>
                                </div>
 
                                     <div style="text-align: center;">
@@ -98,7 +107,7 @@ width: 500px;
                     </td>
                       </br>
 
-                    <td  style="height: 10px width:30px" class="col-sm-4 col-lg-4 col-md-4" ng-if="($index+3) < displayproducts.length">
+                    <td  class="col-sm-3 col-lg-3 col-md-3" ng-if="($index+3) < displayproducts.length">
                         <div class="thumbnail">
                             <img src={{displayproducts[$index+3].picture}} alt="">
                             <div class="caption">
@@ -106,7 +115,7 @@ width: 500px;
                                 <h4>{{displayproducts[$index+3].name}}</h4>
                               </br>
                                  <div style="text-align: center;">
-                                 <span>Qty <input ng-model="displayproducts[$index+3].quantity" size="2"> </input>{{" "+displayproducts[$index+3].measure}} </span>
+                                 <span>Qty <input  type="number" ng-model="displayproducts[$index+3].quantity"> </input>{{" "+displayproducts[$index+3].measure}} </span>
                                </div>
 
                                     <div style="text-align: center;">

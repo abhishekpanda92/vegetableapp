@@ -34,6 +34,16 @@ function store() {
     },
     {
       "category": "fruitsvegetables",
+      "subcategory": "vegetables",
+      "name" : "Potato",
+      "Price" : 34 ,
+      "DiscPrice" : 31 ,
+      "quantity" : 0,
+      "picture": "images/potato.jpg",
+      "measure" : "Kg"
+    },
+    {
+      "category": "fruitsvegetables",
       "subcategory": "Fruits",
       "name" : "Carrot",
       "Price" : 24 ,
