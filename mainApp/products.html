@@ -43,8 +43,9 @@
                                  <h4 class="pull-right">{{"Rs. "+displayproducts[$index].Price}}</h4>
                                  <h4>{{displayproducts[$index].name}}</h4>
                                   </br>
+                           <p>Qty {{ displayproducts[$index].quantity+" "+displayproducts[$index].measure+" "+displayproducts[$index].measure +" added to cart"}} </p>
                                       <div style="text-align: center;">
-                                         <p>Qty {{ displayproducts[$index].quantity+" "+displayproducts[$index].measure+" "+displayproducts[$index].measure +" added to cart"}} </p>
+                                         
                                         <span>Qty <input type="number" ng-model="displayproducts[$index].quantity" min="0"> </input>{{" "+displayproducts[$index].measure}} </span>
                                         </div>
 
