@@ -44,7 +44,7 @@
                                  <h4>{{displayproducts[$index].name}}</h4>
                                   </br>
                                       <div style="text-align: center;">
-
+                                         <span>Qty {{ displayproducts[$index].quantity+" "+displayproducts[$index].measure+" "+displayproducts[$index].measure +" added to cart"}} </span>
                                         <span>Qty <input type="number" ng-model="displayproducts[$index].quantity" min="0"> </input>{{" "+displayproducts[$index].measure}} </span>
                                         </div>
 
@@ -54,6 +54,8 @@
                                         add to cart
                                        </button>
                                      </div>
+                         
+                                       
                                  </div>
                               </div>
                            </td>
