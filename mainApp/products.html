@@ -33,7 +33,7 @@
     Checkout
 </button>
 </div>
-      <p>Abhishek Panda </p>
+     
 <table>
                      <tr ng-repeat="product in displayproducts" ng-if="$index % 4 == 0" class="row" >
                        <td class="col-sm-3 col-lg-3 col-md-3" style="display:inline-block">
@@ -50,6 +50,8 @@
                                         </div>
 
 
+                        Qty xxxxx
+                         
                                        <div  style="text-align: center;">
                                        <button class="btn btn-success" ng-click="cart.addItem(displayproducts[$index].name, displayproducts[$index].Price, displayproducts[$index].quantity,displayproducts[$index].measure)">
                                         add to cart
